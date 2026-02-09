@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVS Perf - macOS Video Stream Performance Tool</title>
+  <meta name="description" content="MVS Perf is a professional macOS video stream performance testing and analysis tool. Monitor FPS, latency, jitter, and more in real time.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-icon">&#9654;</span> MVS Perf
+      </a>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-label" id="langLabel">中文</span>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+        <li><a href="#screenshots" data-i18n="nav.screenshots">Screenshots</a></li>
+        <li><a href="#video" data-i18n="nav.video">Video</a></li>
+        <li><a href="#report" data-i18n="nav.report">Report</a></li>
+        <li><a href="#download" class="nav-cta" data-i18n="nav.download">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">MVS Perf</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">macOS Video Stream Performance Testing &amp; Analysis</p>
+      <p class="hero-desc" data-i18n="hero.desc" data-i18n-html="true">Monitor frame rate, latency, jitter, and key metrics in real time.<br>Evaluate video stream quality and generate professional test reports with one click.</p>
+      <a href="https://apps.apple.com" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg class="apple-icon" viewBox="0 0 384 512" width="20" height="20" fill="currentColor">
+          <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-62.1 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+        </svg>
+        <span data-i18n="hero.appstore">Download on App Store</span>
+      </a>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- Features -->
+  <section class="section features" id="features">
+    <div class="container">
+      <h2 class="section-title fade-in" data-i18n="features.title">Key Features</h2>
+      <p class="section-desc fade-in" data-i18n="features.desc">A powerful video stream performance analyzer built for macOS</p>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </div>
+          <h3 data-i18n="features.monitor.title">Real-time Monitoring</h3>
+          <p data-i18n="features.monitor.desc">Track FPS, latency, jitter, dropped frames and other key performance metrics in real time.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20V10"></path>
+              <path d="M18 20V4"></path>
+              <path d="M6 20v-4"></path>
+            </svg>
+          </div>
+          <h3 data-i18n="features.smooth.title">Smooth Score</h3>
+          <p data-i18n="features.smooth.desc">An original comprehensive scoring system that intuitively quantifies video stream smoothness.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+              <rect x="2" y="2" width="20" height="20" rx="2"></rect>
+            </svg>
+          </div>
+          <h3 data-i18n="features.charts.title">Detailed Charts</h3>
+          <p data-i18n="features.charts.desc">Multi-dimensional trend graphs and distribution histograms for Smooth Score, FPS, and frame intervals.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+          </div>
+          <h3 data-i18n="features.report.title">PDF Report Export</h3>
+          <p data-i18n="features.report.desc">Generate professional PDF reports with complete test data and charts in one click.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="section screenshots" id="screenshots">
+    <div class="container">
+      <h2 class="section-title fade-in" data-i18n="screenshots.title">Screenshots</h2>
+      <p class="section-desc fade-in" data-i18n="screenshots.desc">Clean and intuitive interface, efficient and professional testing experience</p>
+      <div class="screenshots-gallery fade-in">
+        <div class="screenshot-item" data-index="0">
+          <img src="pictures/测试场景截图.png" alt="Test Scenario" loading="lazy">
+          <span class="screenshot-label" data-i18n="screenshots.label1">Test Scenario Management</span>
+        </div>
+        <div class="screenshot-item" data-index="1">
+          <img src="pictures/Mini测试图表展示截图.png" alt="Mini Charts" loading="lazy">
+          <span class="screenshot-label" data-i18n="screenshots.label2">Real-time Performance Overview</span>
+        </div>
+        <div class="screenshot-item" data-index="2">
+          <img src="pictures/详细测试图表展示截图1.png" alt="Detailed Charts 1" loading="lazy">
+          <span class="screenshot-label" data-i18n="screenshots.label3">Smooth Score Trend</span>
+        </div>
+        <div class="screenshot-item" data-index="3">
+          <img src="pictures/详细测试图片展示截图2.png" alt="Detailed Charts 2" loading="lazy">
+          <span class="screenshot-label" data-i18n="screenshots.label4">FPS Detailed Analysis</span>
+        </div>
+        <div class="screenshot-item" data-index="4">
+          <img src="pictures/详细测试图表展示截图3.png" alt="Detailed Charts 3" loading="lazy">
+          <span class="screenshot-label" data-i18n="screenshots.label5">Frame Interval Distribution</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Demo -->
+  <section class="section video-section" id="video">
+    <div class="container">
+      <h2 class="section-title fade-in" data-i18n="video.title">Video Demo</h2>
+      <p class="section-desc fade-in" data-i18n="video.desc">Watch MVS Perf in action</p>
+      <div class="video-wrapper fade-in">
+        <video controls preload="metadata">
+          <source src="videos/应用展示视频.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Report -->
+  <section class="section report-section" id="report">
+    <div class="container">
+      <h2 class="section-title fade-in" data-i18n="report.title">Sample Report</h2>
+      <p class="section-desc fade-in" data-i18n="report.desc">Professional PDF test reports with complete data and analysis results</p>
+      <div class="report-wrapper fade-in">
+        <iframe src="pdf/Video_Stream_Report_测试场景A_2026-02-09%2007:42:55.pdf" title="Report Preview"></iframe>
+      </div>
+      <div class="report-actions fade-in">
+        <a href="pdf/Video_Stream_Report_测试场景A_2026-02-09%2007:42:55.pdf" download class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span data-i18n="report.download">Download Sample Report</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA -->
+  <section class="section download-section" id="download">
+    <div class="container">
+      <div class="download-content fade-in">
+        <h2 data-i18n="download.title">Get Started with MVS Perf</h2>
+        <p data-i18n="download.desc">Download for free on the Mac App Store and start testing video stream performance today.</p>
+        <a href="https://apps.apple.com" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          <svg class="apple-icon" viewBox="0 0 384 512" width="22" height="22" fill="currentColor">
+            <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-62.1 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+          </svg>
+          <span data-i18n="download.appstore">Download on App Store</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 MVS Perf. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous">&#10094;</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Screenshot preview">
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
