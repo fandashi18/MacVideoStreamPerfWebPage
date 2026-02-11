@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav.download': 'Download',
       'hero.subtitle': 'macOS Video Stream Performance Testing & Analysis',
       'hero.desc': 'Monitor frame rate, latency, jitter, and key metrics in real time.<br>Evaluate video stream quality and generate professional test reports with one click.',
-      'hero.appstore': 'Download on App Store',
+      'hero.appstore': 'Coming in 2 weeks',
       'features.title': 'Key Features',
       'features.desc': 'A powerful video stream performance analyzer built for macOS',
       'features.monitor.title': 'Real-time Monitoring',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'report.download': 'Download Sample Report',
       'download.title': 'Get Started with MVS Perf',
       'download.desc': 'Download for free on the Mac App Store and start testing video stream performance today.',
-      'download.appstore': 'Download on App Store',
+      'download.appstore': 'Coming in 2 weeks',
     },
     zh: {
       'nav.features': '功能',
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav.download': '下载',
       'hero.subtitle': 'macOS 视频流性能测试与分析工具',
       'hero.desc': '实时监测帧率、延迟、抖动等关键指标，<br>全面评估视频流质量，一键生成专业测试报告。',
-      'hero.appstore': 'App Store 下载',
+      'hero.appstore': '两周后上线',
       'features.title': '核心功能',
       'features.desc': '专为 macOS 打造的视频流性能分析利器',
       'features.monitor.title': '实时性能监测',
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'report.download': '下载报告示例',
       'download.title': '开始使用 MVS Perf',
       'download.desc': '在 Mac App Store 免费下载，立即体验专业的视频流性能测试。',
-      'download.appstore': 'App Store 下载',
+      'download.appstore': '两周后上线',
     },
   };
 
